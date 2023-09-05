@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+
+/*-----------------------------------------------------------------------------*/  
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+html,body { 
+    width: 100%; 
+    height: 100%; 
+}
+
+body {
+    cursor: none;
+    background-color: #84e2e2;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.cursor-dot {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: black;    /*needs changes*/
+}
+
+.cursor-outline {
+    width: 2.5vw;
+    height: 2.5vw;
+    border: 0.1vw solid black;
+}
+
+.cursor-dot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.screen{
+    position: absolute;
+    display: flex;
+    background-color: rgb(37, 203, 156);
+    height: 100vh;
+    width: 100vw;
+}
+
+.head {
+    margin-left: 5vw;
+    margin-top: 7vh;
+}
+
+.head h2 {
+    font-family: 'Gluten', cursive;
+    font-size: 3em;
+    margin-top: 6vh;
+}
+
+.number {
+    align-items: flex-end;
+    margin-left: 41vw;
+    margin-top: 0.5vh;
+}
+
+.number h1 {
+    font-size: 6em;
+    margin-top: 5vh;
+    line-height: 19vh;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+.top{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Tulpen One', cursive;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.header {
+    display: flex;
+    width: 100vw;
+    margin-top: 2.2vh;
+    margin-bottom: 1vh;
+    /*background-color: blue;*/
+    font-size: 1.1em;
+    /*border-bottom: 2px solid black;*/
+}
+
+.header img {
+    height: 2.7vw;
+}
+
+.logo {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 1.35em;
+    padding-left: 2.8vw;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    padding: 0.8vw;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 3vw;
+    margin-top: 1vh;
+    width: 85vw;
+    justify-content: flex-end;
+    font-family: 'Abel', sans-serif;
+    gap: 4.5vw;
+    font-size: 1.35em;
+    font-weight: 500;
+}
+
+.icon1{
+    font-size: 1.4em;
+    display: none;
+}
+
+.navbar a:hover {
+    cursor: none;
+    color: white;
+    padding-left: 1vw;
+    padding-top: 1.2vh;
+    padding-right: 1vw;
+    padding-bottom: 0.5vw;
+    background-color: blueviolet;
+    border: 0.2vw solid black;
+    /*border-radius: 30%;*/
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: 0.5s;
+    box-shadow: 0.3vw 0.3vw blue;
+    /*add box shadow*/
+}
+
+@media (max-width:600px) {
+    .navbar {
+        display: none;
+    }
+
+    .icon1 {
+        display: block;
+    }
+
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.page1 h1{
+    margin-top: 5vh;
+    font-size: 3em;
+    font-family: 'Phudu', cursive;
+    font-weight: 300;   
+}
+
+.page1 h1:hover{
+    transition: 0.5s;
+    text-shadow: blue -0.2vw 0,red 0.2vw 0;
+}
+
+.page1 h2{
+    margin-top: 1.5vh;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 9em;
+    font-weight: 100;
+    line-height: 23vh;
+}
+
+.page1 .star{
+    margin-top: 20vh;
+    font-size: 5em;
+    font-weight: 100;
+}
+
+.page2{
+    display: flex;
+    margin-top: 25vh;
+    gap: 17vw;
+}
+
+.page2 .intro p{
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    width: 45vw;
+    margin-left: 5vw;
+}
+
+.page2 .intro h1{
+    font-family: 'Aboreto', cursive;
+    margin-left: 8vw;
+    margin-top: 2.5vw;
+    font-size: 4.5em;
+}
+
+.page2 img{
+    height: 40vh;
+    border-radius: 50%;
+}
+
+.page3{
+    margin-top: 35vh;
+    line-height: 20vh;
+}
+
+.page3 h1{
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 8em;
+    background-color: rgba(214, 202, 202, 0.624);
+    border-top: 0.2vh solid black;
+    border-bottom: 0.2vh solid black;
+}
+
+.page4{
+    margin-top: 35vh;
+}
+
+.page4 .aaa .qwe{
+    display: flex;
+    line-height: 7vh;
+    margin-left: 22vw;
+}
+
+.page4 .aaa .qwe h1{
+    font-size: 4em;
+    padding-right: 2vw;
+}
+
+.page4 .aaa .qwe h2{
+    padding-top: 4vh;
+    font-size: 8em;
+}
+
+.page4 .aaa h1{
+    font-size: 8em;
+}
+
+.button{
+    margin-top: 6vh;
+    padding: 0.5vw;
+    background-color: black;
+    border: 0.3vw solid black;
+    width: 9.8vw;
+}
+
+.button a{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.75em;
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background-color: white;
+    box-shadow: 0.3vw 0.3vw;
+    transition: 0.5s;
+}
+
+.button a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30vw;
+    margin-top: 25vh;
+    background-color: white;
+}
+
+.footer h1{
+    font-size: 3em;
+    font-family: 'Qwigley', cursive;
+    padding: 1vw;
+    
+}
+
+.footer .media{
+    gap: 5vw;
+}
+
+.footer .media a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .media a i{
+    color: white;
+    background-color: black;
+    padding: 1vw;
+    border-radius: 50%;
+}
